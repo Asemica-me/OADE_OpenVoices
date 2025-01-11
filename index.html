@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Open Voices</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/iconsm.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <!-- Google Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,0" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="geo_opinions/opinions.css" rel="stylesheet">
+  <link href="geo_victims/cvictim.css" rel="stylesheet">
+  <link href="geo_causes/gcauses.css" rel="stylesheet">
+
+
+  <!-- Import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+  <!-- VISUALISATIONS -->
+  <!-- amCharts -->
+  <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+  <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+  <!-- Plotly -->
+
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <script type="text/javascript"
+    src="assets/js/plotly_graphs/bubble-charts/bubble-chart-17-edu-preg (1)/plotlyjs-bundle.js"></script>
+  <script type="text/javascript"
+    src="assets/js/plotly_graphs/bubble-charts/bubble-chart-17-edu-preg (1)/figure.js"></script>
+
+
+
+  <!-- Leaflet -->
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
+    </script>
+
+  <script src="
+    https://cdn.jsdelivr.net/npm/esri-leaflet-legend@2.0.1/dist/esri-leaflet-legend.min.js
+    "></script>
+
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.10.0
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">open<br>voices</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#results">Results</a></li>
+          <li><a class="nav-link scrollto" href="#datasets">Datasets</a></li>
+          <li class="dropdown"><a href=""><span>Documentation</span><i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#analyses">Analyses</a></li>
+              <li><a class="nav-link scrollto" href="#pre">Preprocessing</a></li>
+              <li><a class="nav-link scrollto" href="#viz">Visualizations</a></li>
+              <li><a class="nav-link scrollto" href="#sustain">Sustainability</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#license">License</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center" style="background-color: #000; color: #fff; height: 100vh;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h1 data-aos="fade-up" style="color: #fff;">Open Voices</h1>
+        <h2 data-aos="fade-up" data-aos-delay="400" style="color: #fff;">How do <span class="underlined underlined--offset" style="color: #000000;">geographical</span> and <span class="underlined underlined--offset" style="color: #000000;">cultural factors</span> across different regions of Italy influence attitudes toward <span class="underlined underlined--offset" style="color: #000000;">gender-based violence</span>?
+        </h2>
+        <div data-aos="fade-up" data-aos-delay="800">
+          <a href="#about" class="btn-get-started scrollto" style="background-color: #000; color: #ffffff;">Find out!</a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+        <img src="assets/img/bgblack.jpg" class="img-fluid animated" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>About the project</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              <i><b>Open Voices</b></i> is a <span class="underlined underlined--offset"><b>Linked Open Data
+                  project</b></span> aimed at analyzing the socio-cultural dynamics that influence violence against women in Italy. 
+                  To approach this complex issue, we have established a few fundamental parameters:
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i><b>Year span</b>: 2018, providing a focused and detailed analysis based on data from a single year to ensure consistency and clarity in interpreting the results.</li>
+              <li><i class="ri-check-double-line"></i><b>Gender</b>: The study includes data on both women and men, as well as aggregated totals, to provide a comprehensive understanding of the phenomenon and examine differences and commonalities across genders.
+              </li>
+              <li><i class="ri-check-double-line"></i><b>Victims</b>: The analysis specifically targets victims who reach out to the national helpline 1522 and categorizes the data by geographic regions across Italy.
+              </li>
+              <li><i class="ri-check-double-line"></i><b>Factors of interest</b>: The study examines public opinions on gender roles, the acceptability of intimate partner violence, causes of violence, and victim demographics.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <p>
+                This project allows for <span
+                class="underlined underlined--offset"><b>a deeper understanding </b></span> of the patterns of violence across different regions of Italy and helps identify socio-cultural factors that contribute to the persistence of gender-based violence. 
+                <br>By integrating this open data, <i>Open Voices</i> aims to inform policies, raise awareness, and provide key insights to foster a more informed and empathetic societal response to gender-based violence.
+            </p>
+            <p>
+            To present these findings in a clear and accessible manner, different  <span class="underlined underlined--offset"><b>visualizations</b></span> have been used to showcase the data. <br>
+            </p>
+            
+            <hr>
+            <h6><i>Main RQ: How do geographical and cultural factors across different regions of Italy influence attitudes toward gender-based violence?</i></h6>
+            <a href="#viz" class="btn-learn-more scrollto">Find out the results!</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Scenario ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Scenario</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              The perception and occurrence of violence against women in Italy are shaped by demographic factors, including geographical location, which influence societal stereotypes and the acceptability of violence. A <span class="underlined underlined--offset"><b>data-driven approach</b></span> that integrates population statistics, societal attitudes, and reports of violence can pinpoint intervention opportunities to reduce violence and challenge harmful stereotypes. 
+              <p>This project aims to raise <span class="underlined underlined--offset"><b>public awareness</b></span> about <span class="underlined underlined--offset"><b>violence against women</b></span>, promote <span class="underlined underlined--offset"><b>gender equality</b></span>, and enhance support services for victims. The documentation is based on <span class="underlined underlined--offset"><b>statistical data from ISTAT</b></span>, the Ministry of Justice, and the Ministry of Security, with a particular focus on public opinions regarding gender roles and the utilization of the anti-violence hotline 1522.</p>
+                <p>This research explores the relationship between <span class="underlined underlined--offset"><b>regional stereotypes</b></span>, <span class="underlined underlined--offset"><b>public perceptions</b></span>, and the <span class="underlined underlined--offset"><b>prevalence of sexual and domestic violence against women</b></span> in Italy. It investigates how stereotypes about women and sexual violence differ across regions, reporting rates, and societal attitudes. The study also examines regional variations in awareness and education about consent, alongside socio-cultural factors that contribute to <span class="underlined underlined--offset"><b>victim-blaming</b></span> and the <span class="underlined underlined--offset"><b>normalization of abusive behaviors in intimate relationships</b></span>.</p>
+                  <p>The final aim is to uncover patterns in the prevalence and reporting of violence, offering insights into the complex interaction between cultural norms and legal outcomes across Italy’s diverse regions.  </p>
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              <span class="underlined underlined--offset"><b>RESEARCH QUESTIONS </b></span> 
+              <ul>
+                <li><i class="ri-check-double-line">
+                </i> How do geographical and cultural factors across different regions of Italy influence attitudes toward sexual violence? </li>
+                <li><i class="ri-check-double-line"></i>What are the prevailing stereotypes about women and sexual violence across different regions in Italy, and how do these stereotypes influence public perception, legal responses, and the prevalence of violence? 
+                </li>
+                <li><i class="ri-check-double-line"></i>How does the level of awareness and education about consent and sexual violence vary across Italian regions, and what impact does this have on reporting rates? 
+                </li>
+                <li><i class="ri-check-double-line"></i>What socio-cultural factors contribute to victim-blaming and the normalization of abusive behaviors in intimate relationships in various geographical areas of Italy, and how do these factors shape public attitudes and response systems? 
+                  <li><i class="ri-check-double-line"></i>To what extent do regional differences in gender roles and expectations influence the prevalence and reporting of domestic and sexual violence against women across Italy? 
+                  </li>
+                  <li><i class="ri-check-double-line"></i>Which territories exhibit the highest levels of gender stereotypes, and how do these correlate with data on sexual and domestic violence? Are there geographical areas where stereotypes persist despite lower reported rates of violence? 
+                  </li>
+              </ul> 
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+
+
+
+
+
+
+    <!-- ======= Results Section ======= -->
+    <section id="results" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Results</h2>
+          </p>
+        </div>
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+          <div class="image col-xl-3 d-flex align-items-stretch justify-content-center justify-content-xl-start"
+            data-aos="fade-right" data-aos-delay="150">
+            <img src="assets/img/icon-results.png" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-xl-9 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="content d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-file-earmark-ruled"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1.3"
+                      class="purecounter"></span>
+                    <p><strong>Datasets</strong>, including source and mashup ones, used to support the investigative analysis</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-people-fill"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="9602" data-purecounter-duration="1.5"
+                      class="purecounter"></span>
+                    <p><strong>Total victims</strong> in the italian population during the year 2018 turning to 1522 anti-violence and stalking number
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-gender-female"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="9341" data-purecounter-duration="1.5"
+                      class="purecounter"></span>
+                    <p><strong>Female victims</strong>, in the italian population during the year 2018 turning to 1522 anti-violence and stalking number</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="bi bi-gender-male"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="261" data-purecounter-duration="1.5"
+                      class="purecounter"></span>
+                    <p><strong>Male victims</strong>, in the italian population during the year 2018 turning to 1522 anti-violence and stalking number</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+
+
+    <!-- ======= Datasets Section ======= -->
+    <section id="datasets" class="portfolio datasets">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Source and mashup datasets</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              The project comprises the use of <b>9 different datasets</b>, between source and
+              mashup ones.
+            </p>
+            <p>
+              The <b>5 source datasets</b> have been downloaded in .csv
+              format from the database belonging to Istat, the
+              Italian National Institute of Statistics:
+            <ul>   
+            <li><i class="ri-check-double-line"></i><b><a href="http://dati.istat.it/?lang=en"
+                target="_blank">I.Stat</a></b>: a
+            datawarehouse organised by theme, presented in multidimensional tables and with a wide range of standard
+            metadata</li>
+        </ul>
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              The source datasets underwent a <span class="underlined underlined--offset"><b>cleaning phase</b></span> during which duplicates and irrelevant entries were identified and removed. Additionally, missing data was supplemented when necessary to ensure the datasets were complete and better suited for streamlined management and analysis. This process laid the groundwork for accurate and meaningful research.</p> 
+            <p>
+              Following the cleanup, we moved to the <span class="underlined underlined--offset"><b>mashup phase</b></span>, where we integrated and harmonized the processed datasets to create the final mashup datasets. These datasets were specifically tailored to address our research questions, ensuring they provide the necessary depth and context for our analyses.
+            </p>
+            <p>
+              Detailed documentation on the data processing steps, including the cleaning procedures, integration strategies, and the methodologies employed to create the mashup datasets, is available in the GitHub <a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">repository</a> of this project.<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".source-dataset">Source datasets</li>
+              <li data-filter=".mashup-dataset">Mashup datasets</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Here the datasets -->
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>D1 - Population 2018</h3>
+              </div>
+              <p style="border-top: #000000 solid 1px;">
+                <b>ID</b>: D1<br>
+                <b>Provenience</b>: <a href="http://dati.istat.it/?lang=en" target="_blank"> I.Stat</a><br>
+                <b>Format</b>: .csv, .xlsx, .xml, .px<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="http://dati.istat.it/Index.aspx/Index.aspx?DataSetCode=DCIS_POPRES1" target="_blank">2018Population</a><br>
+                <b>License</b>: CC BY 3.0<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>D2 - Opinions about sexual violence </h3>
+              </div>
+              <p style="border-top: #000000 solid 1px;">
+                <b>ID</b>: D2<br>
+                <b>Provenience</b>: <a href="https://esploradati.istat.it/databrowser/#/" target="_blank">I.Stat</a><br>
+                <b>Format</b>: .csv, .xlsx, .xml, .px<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,Z0840JUS,1.0/JUS_VIOLENCE/DCCV_RUOLIGEN/IT1,78_1161_DF_DCCV_RUOLIGEN_9,1.0" target="_blank">OpinionsViolenceGeoAreas</a><br>
+                <b>License</b>: CC BY 3.0<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>D3 - Acceptability of intimate partner violence</h3>
+              </div>
+              <p style="border-top: #557c70 solid 1px;">
+                <b>ID</b>: D3<br>
+                <b>Provenience</b>: <a href="https://esploradati.istat.it/databrowser/#/" target="_blank">I.Stat</a><br>
+                <b>Format</b>: .csv, .xlsx, .xml, .px<br>
+                <b>Metadata</b>: Provided</a><br>
+                <b>URI</b>: <a href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,Z0840JUS,1.0/JUS_VIOLENCE/DCCV_RUOLIGEN/IT1,78_1161_DF_DCCV_RUOLIGEN_12,1.0"
+                  target="_blank">OpinionsPartnerGeoAreas</a><br>
+                <b>License</b>: CC BY 3.0<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>D4 - Victims turning to 1522</h3>
+              </div>
+              <p style="border-top: #000000 solid 1px;">
+                <b>ID</b>: D4<br>
+                <b>Provenience</b>:  <a href="http://dati.istat.it/?lang=en" target="_blank">I.Stat</a><br>
+                <b>Format</b>: .csv, .xlsx, .xml, .px<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href="http://dati.istat.it/Index.aspx?QueryId=56723&lang=en"
+                  target="_blank">Victims</a><br>
+                <b>License</b>: CC BY 3.0<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 portfolio-item source-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-file-earmark" style="color: #557c70;"></i>
+                <h3>D5 -  Indication of some causes of intimate partner violence </h3>
+              </div>
+              <p style="border-top: #000000 solid 1px;">
+                <b>ID</b>: D5<br>
+                <b>Provenience</b>: <a href="http://dati.istat.it/?lang=en" target="_blank">I.Stat</a><br>
+                <b>Format</b>: .csv, .xlsx, .xml, .px<br>
+                <b>Metadata</b>: Provided</a><br>
+                <b>URI</b>: <a href="http://dati.istat.it/Index.aspx?QueryId=50821&lang=en"
+                  target="_blank">ViolenceCauses</a><br>
+                <b>License</b>: CC BY 3.0<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-database" style="color: #b74d3a;"></i>
+                <h3>MD5 - K-MEANS CLUSTERS </h3>
+              </div>
+              <p style="border-top: #b74d3a solid 1px;">
+                <b>ID</b>: MD5<br>
+                <b>Creation date</b>: 1 January 2025<br>
+                <b>Format</b>: .csv<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href=""
+                  target="_blank">MD5</a><br>
+                <b>License</b>: CC BY 4.O<br>
+                <b>Download</b>:
+                <a href="data/mashup/D1_D4_D5.csv" download>MD5</a>
+              </p>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-database" style="color: #b74d3a;"></i>
+                <h3>MD6 - Victims causes indication </h3>
+              </div>
+              <p style="border-top: #b74d3a solid 1px;">
+                <b>ID</b>: MD6<br>
+                <b>Creation date</b>: 1 January 2025<br>
+                <b>Format</b>: .csv<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href=""
+                  target="_blank">MD6</a><br>
+                <b>License</b>: CC BY 4.O<br>
+                <b>Download</b>:
+                <a href="data/mashup/D1_D4_D5.csv" download>MD6</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-database" style="color: #b74d3a;"></i>
+                <h3>MD7 - Geographical Distribution of Female Victims </h3>
+              </div>
+              <p style="border-top: #b74d3a solid 1px;">
+                <b>ID</b>: MD7<br>
+                <b>Creation date</b>: 1 January 2025<br>
+                <b>Format</b>: .csv<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href=""
+                  target="_blank">MD7</a><br>
+                <b>License</b>: CC BY 4.O<br>
+                <b>Download</b>:
+                <a href="data/mashup/D1_D4_FEMALES.csv" download>MD7</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-database" style="color: #b74d3a;"></i>
+                <h3>MD8 - Geographical Distribution of Males Victims </h3>
+              </div>
+              <p style="border-top: #b74d3a solid 1px;">
+                <b>ID</b>: MD8<br>
+                <b>Creation date</b>: 1 January 2025<br>
+                <b>Format</b>: .csv<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href=""
+                  target="_blank">MD8</a><br>
+                <b>License</b>: CC BY 4.O<br>
+                <b>Download</b>:
+                <a href="data/mashup/D1_D4_MALES.csv" download>MD8</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item mashup-dataset">
+            <div class="icon-box">
+              <div class="dataset-title">
+                <i class="bi bi-database" style="color: #b74d3a;"></i>
+                <h3>MD9 - Geographical Distribution of Total Victims  </h3>
+              </div>
+              <p style="border-top: #b74d3a solid 1px;">
+                <b>ID</b>: MD9<br>
+                <b>Creation date</b>: 1 January 2025<br>
+                <b>Format</b>: .csv<br>
+                <b>Metadata</b>: Provided<br>
+                <b>URI</b>: <a href=""
+                  target="_blank">MD9</a><br>
+                <b>License</b>: CC BY 4.O<br>
+                <b>Download</b>:
+                <a href="data/mashup/D1_D4_TOTAL.csv" download>MD9</a>
+              </p>
+            </div>
+          </div>
+      </div>
+    </section><!-- End Datasets Section -->
+
+    <!-- ======= Analyses Section ======= -->
+    <section id="analyses" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Analyses</h2>
+          <p>The five source datasets have been analysed for four aspects.</p>
+        </div>
+
+        <div class="row">
+          <!-- === Quality Analysis === -->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#target1" aria-expanded="false">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon">
+                    <img src="assets/img/icons1.png" alt="Quality Analysis Icon" style="width: 40px; height: 40px; object-fit: cover;">
+                  </div>
+              <h4 class="title"><a>Quality analysis</a></h4>
+              <p class="description">In alignment with the National Guidelines for Enhancing Public Information Assets, we evaluated data quality based on four key factors: accuracy, completeness, coherence, and timeliness.</p>
+            </div>
+          </div>
+
+          <!-- === Legal Analysis === -->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#target2" aria-expanded="false">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon">
+                    <img src="assets/img/law1.png" alt="Quality Analysis Icon" style="width: 40px; height: 40px; object-fit: cover;">
+                  </div>
+              <h4 class="title"><a href="">Legal Analysis</a></h4>
+              <p class="description">The legal analysis aims to evaluate potential risks and imbalances related to the long-term sustainability of data generation and dissemination, 
+                focusing on areas such as privacy, intellectual property rights, licensing for release, restrictions on public access, economic factors, and other temporal considerations.</p>
+            </div>
+          </div>
+
+          <!-- === Ethical Analysis === -->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#target3" aria-expanded="false">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon">
+                    <img src="assets/img/law.png" alt="Quality Analysis Icon" style="width: 40px; height: 40px; object-fit: cover;">
+                  </div>
+              <h4 class="title"><a href="">Ethical Analysis</a></h4>
+              <p class="description">Assessing the datasets through the lens of the Data Ethics Principles and Guidelines, focusing on human-centered approaches, transparency, responsibility, and safeguarding individual data.
+              </p>
+            </div>
+          </div>
+
+          <!-- === Technical Analysis === -->
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" type="button" data-bs-toggle="collapse"
+            data-bs-target="#target4" aria-expanded="false">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon">
+                    <img src="assets/img/settings.png" alt="Quality Analysis Icon" style="width: 40px; height: 40px; object-fit: cover;">
+                  </div>
+              <h4 class="title"><a href="">Technical Analysis</a></h4>
+              <p class="description">This section examines the metadata provided by Istat and other relevant information about the datasets, including format, provenance, and Internationalized Resource Identifiers (IRI). Additionally, it involves creating RDF assertions and metadata for the mashup datasets, along with an evaluation of the project’s alignment with the FAIR principles.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Quality box -->
+      <div class="container collapse analysis-card" id="target1" data-bs-parent="#analyses">
+        <div class="align-items-stretch mb-5 mb-lg-0">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+                <img src="assets/img/icons1.png" alt="Quality Analysis Icon" style="width: 30px; height: 30px; margin-right: 10px;">
+                <h2 class="analysis-title">Quality analysis</h2>
+            </div>
+            <p class="analysis-text">
+                In line with the
+                <a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/aspettiorg.html#qualita-dei-dati"
+                target="_blank"><b>National
+                  Guidelines</b></a> ("Linee guida nazionali per la valorizzazione del patrimonio informativo
+              pubblico"),  developed under the Data & Analytics
+              Framework project by AgID and the Digital Transformation Team, we conducted a thorough quality assessment of our datasets to ensure their reliability and suitability for their intended purposes. <span class="underlined--bg underlined--offset--bg">
+               
+              Specifically, there are four main factors to look for when analysing data quality:
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>Accuracy (syntactic and semantic)</b>: Verifying that the data and its attributes accurately reflect the real-world values or events they represent.</li>
+              <li class="list-group-item"><b>Coherence</b>: Ensuring that the data is consistent and free from contradictions when compared to other related datasets within the administrative context.</li>
+              <li class="list-group-item"><b>Completeness</b>: Assessing whether the datasets provide exhaustive values and fully account for all related entities (sources) that contribute to the defined procedures.</li>
+              <li class="list-group-item"><b>Timeliness (or promptness of updating)</b>: Confirming that the data is up to date and corresponds to the relevant timeframes for the associated processes.</li>
+            </ul>
+            The results of this analysis are summarized in a table highlighting the overall quality of each dataset and identifying any areas requiring improvement.
+            </p>
+            <!-- Table for quality analysis -->
+            <div class="table-responsive">
+              <table class="table table-hover align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">ID Dataset</th>
+                    <th scope="col">Accuracy</th>
+                    <th scope="col">Coherence</th>
+                    <th scope="col">Completeness</th>
+                    <th scope="col">Timeliness</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">D1 - Population 2018</th>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D2 - Opinions about sexual violence</th>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D3 - Acceptability of intimate partner violence</th>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D4 - Victims turning to 1522</th>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td>*</i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D5 - Indication of some causes of intimate partner violence</th>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                    <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                  </tr>
+                  </span>
+                </tbody>
+              </table>
+              * In the victims dataset, data on the number of victims of gender-based violence for the region Trentino-Alto Adige was missing. To estimate these values (total, males and females), the death rate per inhabitant of the region Friuli-Venezia Giulia was used, considered similar in terms of population density.
+            <br>  The same method was used to estimate missing values of male and female victims for Trentino and male victims in Basilicata, comparing them with the rate of Molise, another region with similar demographic characteristics.
+             <br> <strong>Victim rate formula (by region):</strong><br>
+              <span style="font-family: 'Times New Roman', serif;">
+              𝑉𝑖𝑐𝑡𝑖𝑚𝑠 𝑟𝑎𝑡𝑒 (𝑝𝑒𝑟 𝑟𝑒𝑔𝑖𝑜𝑛) = 𝑉𝑖𝑐𝑡𝑖𝑚𝑠 𝑉𝑎𝑙𝑢𝑒 ÷ 𝑃𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛 𝑣𝑎𝑙𝑢𝑒
+              </span>
+              <br><strong>Formula for estimating missing values:</strong><br>
+              <span style="font-family: 'Times New Roman', serif;">
+              𝑀𝑖𝑠𝑠𝑖𝑛𝑔 𝑣𝑖𝑐𝑡𝑖𝑚𝑠 𝑣𝑎𝑙𝑢𝑒 𝑒𝑠𝑡𝑖𝑚𝑎𝑡𝑖𝑜𝑛 = 𝑣𝑖𝑐𝑡𝑖𝑚𝑠 𝑟𝑎𝑡𝑒 × 𝑝𝑜𝑝𝑢𝑙𝑎𝑡𝑖𝑜𝑛 𝑣𝑎𝑙𝑢𝑒 (𝑜𝑓 𝑟𝑒𝑔𝑖𝑜𝑛 𝑤𝑖𝑡ℎ 𝑚𝑖𝑠𝑠𝑖𝑛𝑔 𝑑𝑎𝑡𝑎)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal box -->
+      <div class="container collapse analysis-card" id="target2" data-bs-parent="#analyses">
+        <div class="align-items-stretch mb-5 mb-lg-0">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+                <img src="assets/img/law1.png" alt="Quality Analysis Icon" style="width: 30px; height: 30px; margin-right: 10px;">
+              <h2 class="analysis-title">Legal analysis</h2>
+            </div>
+            <p class="analysis-text">
+                The legal analysis of the source datasets is essential to ensure the <span
+                class="underlined--bg underlined--offset--bg"><b> long-term sustainability</b></span> of the production
+              process and of the publication of datasets and to guarantee a  of both the data production process and the publication of datasets, while also guaranteeing a balanced service that aligns with public responsibilities and respects<span
+                class="underlined--bg underlined--offset--bg"><b> individual rights.</b></span>
+            </p>
+            <p class="analysis-text">
+              This analysis was carried out using a reference checklist consisting of a series of binary questions
+              regarding the topics of: <b>privacy issues</b>, <b>IPR policy</b>, <b>licenses</b>, <b>limitations on
+                public access</b>, <b>economical conditions</b>, and <b>temporal aspects</b>.
+            </p>
+            <!-- Legal Accordion -->
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Privacy Issues
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">D3</th>
+                          <th scope="col">D4</th>
+                          <th scope="col">D5</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"> Is the dataset free of any personal data as defined in the
+                            Regulation (EU) 2016/679?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Is the dataset free of any indirect personal data that could be
+                            used for identifying the natural person?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"> Is the dataset free of any particular personal data (art. 9
+                            GDPR)?</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Is the dataset free of any information that combined with
+                            common data available in the web, could identify the person?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Is the dataset free of any information related to human rights
+                            (e.g., refugees, witness protection, etc.)
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Did you use a tool for calculating the range of the risk of deanonymization?
+                          </th>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Are you using geolocalization capabilities?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Did you check that the open data platform respect all the
+                            privacy regulations (registration of the end-user, profiling, cookies,
+                            analytics, etc.)?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Do you know who, in your open data platform, is the
+                            Controller and Processor of the privacy data of the system?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Have you checked the privacy regulation of the country where the dataset are
+                            physically stored?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                         </tr>
+                        <tr>
+                          <th scope="row">Do you have non-personal data?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Intellectual Property Rights
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">D3</th>
+                          <th scope="col">D4</th>
+                          <th scope="col">D5</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Have you created and generated the dataset?</th>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          
+                          
+                        </tr>
+                        <tr>
+                          <th scope="row">Are you the owner of the dataset?</th>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          
+                          
+                        </tr>
+                        <tr>
+                          <th scope="row">Are you sure not to use third party data without the proper
+                            authorization and license?</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Have you checked if there are any limitations in your
+                            national legal system for releasing some kind of datasets with
+                            open license?</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Licenses
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">D3</th>
+                          <th scope="col">D4</th>
+                          <th scope="col">D5</th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Did you release the dataset with an open data license?</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                         </tr>
+                        <tr>
+                          <th scope="row"> Did you include the clause: "In any case the dataset can't be
+                            used for re-identifying the person"?</th>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Did you release the API (in case you have it) with an open
+                            source license?</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Have you checked that the open data/API platform license regime
+                            is in compliance with your IPR policy?</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                       </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Limitations on public access
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">D3</th>
+                          <th scope="col">D4</th>
+                          <th scope="col">D5</th>
+    
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Did you check that the dataset concerns your institutional
+                            competences, scope and finality?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Did you check the limitations for the publication stated by your
+                            national legislation or by the EU directives?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Did you check if there are some limitations connected to the
+                            international relations, public security or national defence?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Did you check if there are some limitations concerning the
+                            public interest?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            Did you check the international law limitations?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Did you check the INSPIRE law limitations for the spatial data?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Economical conditions
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">D3</th>
+                          <th scope="col">D4</th>
+                          <th scope="col">D5</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            Did you check that the dataset could be released for free?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            Did you check if there are some agreements with some other
+                            partners in order to release the dataset with a reasonable price?
+                          </th>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            Did you check if the open data platform terms of service
+                            include a clause of “non liability agreement” regarding the dataset
+                            and API provided?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"> In case you decide to release the dataset to a reasonable
+                            price did you check if the limitation imposed by the new directive
+                            2019/1024/EU are respected?
+                          </th>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            In case you decide to release the dataset to a reasonable
+                            price did you check the <a
+                              href="https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32000L0031"
+                              target="_blank">e-Commerce
+                              directive</a> and regulation?
+                          </th>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Temporary aspects
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col">D1</th>
+                          <th scope="col">D2</th>
+                          <th scope="col">D3</th>
+                          <th scope="col">D4</th>
+                          <th scope="col">D5</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            Do you have a temporary policy for updating the dataset?
+                          </th>
+                          <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            Do you have some mechanism for informing the end-user that
+                            the dataset is updated at a given time to avoid mis-usage and so
+                            potential risk of damage?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                       </tr>
+                        <tr>
+                          <th scope="row">
+                            Did you check if the dataset for some reason cannot be indexed
+                            by the research engines (e.g., Google, Yahoo, etc.)?
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            In case of personal data, do you have a reasonable technical
+                            mechanism for collecting request of deletion (e.g., right to be
+                            forgotten)?
+                          </th>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                          <td>Not needed</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3 class="analysis-second-title">Publication license</h3>
+            <p class="analysis-text">
+                A key aspect of the legal analysis is determining the appropriate publication license for the newly created mashup datasets. This decision must align with the licenses of the source datasets, which in our case, were all released under the
+                 <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><b>CC BY 3.0</b></a>.<br>
+                 To guide this process, we utilized the Licensing Assistant tool provided by the European Commission. After evaluating the options, we opted to publish all nine mashup datasets under the <a
+                  href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">CC BY 4.0</a>
+                license</b>.
+            </p>
+            <p class="analysis-text">The table below summarizes the original licenses of the source datasets and the final publication license applied to the mashup datasets:
+            </p>
+            <div class="table-responsive">
+              <table class="table table-hover align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Dataset</th>
+                    <th scope="col">Original licenses</th>
+                    <th scope="col">Final license</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">MD6</th>
+                    <td>Victims causes indication</td>
+                    <td>CC BY 3.0, CC BY 3.0, CC BY 3.0</td>
+                    <td>CC BY 4.0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">MD7</th>
+                    <td> Geographical Distribution of Female Victims </td>
+                    <td>CC BY 3.0, CC BY 3.0, CC BY 3.0</td>
+                    <td>CC BY 4.0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">MD8</th>
+                    <td>Geographical Distribution of Males Victims</td>
+                    <td>CC BY 3.0, CC BY 3.0, CC BY 3.0</td>
+                    <td>CC BY 4.0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">MD9</th>
+                    <td>Geographical Distribution of Total Victims </td>
+                    <td>CC BY 3.0, CC BY 3.0, CC BY 3.0</td>
+                    <td>CC BY 4.0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ethical box -->
+      <div class="container collapse analysis-card" id="target3" data-bs-parent="#analyses">
+        <div class="align-items-stretch mb-5 mb-lg-0">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+                <img src="assets/img/law.png" alt="Quality Analysis Icon" style="width: 30px; height: 30px; margin-right: 10px;">
+              <h2 class="analysis-title">Ethical analysis</h2>
+            </div>
+            <br>
+            <img src='assets/img/ethics-icon.png' class="float-left" id="ethics" />
+            <br>
+            <br>
+            <p style='padding: 0 4em 2em 2em;' class="analysis-text">
+              <br>
+              For the ethical analysis of our project’s data, we applied the <span class="underlined--bg underlined--offset--bg"><b> <a
+                href="https://dataethics.eu/data-ethics-principles/" target="_blank">Data Ethics Principles and
+                Guidelines</a></b></span> and the <span class="underlined--bg underlined--offset--bg"><b>Odi Project's</b></span> detailed <a
+                href="https://theodi2022.wpengine.com/article/the-data-ethics-canvas-2021/#1674123020653-5e9f001c-5eb8"
+                target="_blank"><b>framework</a> </b> for assessing the ethical aspects of our data processing.
+
+            </p>
+            <p style='padding: 0 4em 2em 4em;'class="analysis-text">
+              Both the source and mashup datasets for our project are exclusively derived from the Italian National Institute of Statistics (ISTAT). 
+              Therefore, we first focused on evaluating the fairness of ISTAT's data collection and management practices. 
+              Following that, we established clear ethical guidelines to ensure responsible handling of the datasets throughout our project's lifecycle.
+            </p>
+            <br>
+            <br>
+            <br>
+
+            <h3 class="analysis-second-title">Data Ethics Principles</h3>
+            <ul class="list-group list-group-flush analysis-text">
+              <li class="list-group-item">
+                <p>The "Open Voices" project aims to analyse the socio-cultural dynamics that influence violence against women in Italy, therefore the ethical approach in data management is fundamental to ensure that the rights of victims are respected, that no stereotypes or discrimination are fostered, and that the analysis contributes positively to raising awareness on such a sensitive issue.</p>
+                <span class="underlined--bg underlined--offset--bg"><b>Human being at the center:</b></span>
+                <a href="https://www4.istat.it/en/about-istat"
+                  target="_blank"> ISTAT’s policy </a>is deeply aligned with both ethical standards and legislative principles. 
+                  The organization prioritizes the dissemination of statistical information to promote awareness of Italy’s social and economic conditions. It also strives to enhance public decision-making by providing clear, accessible statistical data. 
+                  In addition, ISTAT conducts research to continually refine statistical methodologies and improve Italy's statistical literacy.
+
+              <li class="list-group-item">
+                <span class="underlined--bg underlined--offset--bg"><b>Equality:</b></span>
+                In the context of the "Open Voices" project, the main objective is to analyze the socio-cultural dynamics that influence violence against women in Italy, Therefore, the collection of data concerns very sensitive issues such as gender violence and its perception within society. 
+                <a href="https://www.istat.it/tag/violenza/"
+                  target="_blank">ISTAT </a> data on key equality issues, such as gender discrimination and domestic violence. 
+              </li>
+
+              <li class="list-group-item">
+                <span class="underlined--bg underlined--offset--bg"><b>Transparency:</b></span>
+                ISTAT ensures transparency in data management by providing comprehensive
+                <a href="https://siqual.istat.it/SIQual/documenti.do" target="_blank">
+                  documentation.</a> This documentation covers the data collection methods, clarifies the use of specific terms and definitions, and outlines policies and licenses that safeguard against misinterpretation of the data.
+              </li>
+
+              <li class="list-group-item">
+                <span class="underlined--bg underlined--offset--bg"><b>Accountability:</b></span>
+                ISTAT's quality assurance procedures align with European frameworks, specifically the <a
+                  href="https://ec.europa.eu/eurostat/web/quality/european-quality-standards/european-statistics-code-of-practice"
+                  target="_blank">
+                 European Statistics Code of Practice</a>. This adherence strengthens both accountability and governance within the national statistical system and aligns it with European standards.
+              </li>
+
+              <li class="list-group-item">
+                <span class="underlined--bg underlined--offset--bg"><b>Individual data protection: </b></span>
+                ISTAT ensures that its datasets are anonymized in compliance with legal requirements. The organization’s practices adhere to strict confidentiality standards, ensuring that the privacy of respondents is always respected. Their approach to handling sensitive data complies with European data protection laws (e.g., Regulation (EU) 2016/679 and Legislative Decree No. 322/1989).
+              </li>
+            </ul>
+            <br>
+            <h3 class="analysis-second-title">Ethical concerns and their management</h3>
+            <br>
+            <p class="analysis-text">
+              Although ISTAT adheres to ethical principles in data collection and management, the team has paid particular attention to the ethical management of source information, given the great sensitivity of the content dealt with in our project, which concerns gender-based violence.
+              Data on sexual violence, the acceptability of partner violence and access to support services (such as 1522) are sensitive issues and ethical concerns in their treatment have been addressed in the following ways:
+            <ul class="list-group list-group-flush analysis-text">
+              <li class="list-group-item"> <span
+                  class="underlined--bg underlined--offset--bg"><b>Data Integrity and Privacy:</b></span>
+                <span class="underlined--bg underlined--offset--bg"></span> To ensure data integrity and privacy, the values from the source datasets were aggregated and presented as percentages, avoiding any correlation with real individuals.
+              </li>
+              <li class="list-group-item"> <span class="underlined--bg underlined--offset--bg"><b>Protection of Vulnerable Groups: </b>
+              </span>Certain sensitive data were intentionally omitted to avoid the risk of discriminatory behavior. The project aimed to protect women experiencing violence, minimizing the risk of stigmatization.
+            </li>
+
+              <li class="list-group-item"> <span
+                  class="underlined--bg underlined--offset--bg"><b>Avoiding Generalizations and Misinterpretations:
+                  </b></span> The objective of the project was to identify potential patterns in the dynamics of gender-based violence, not to make inferences or generalizations. In our results and conclusions documentation, we emphasize that any observed patterns in the data should not be generalized due to inconsistencies in the data and the absence of other potentially relevant socio-economic factors.
+                </li>
+              <li class="list-group-item">All relevant documentation regarding the data processing for the creation of mashup datasets and visualizations is provided in our GitHub repository</a>.</p>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical box -->
+      <div class="container collapse analysis-card" id="target4" data-bs-parent="#analyses">
+        <div class="align-items-stretch mb-5 mb-lg-0">
+          <div class="analysis-box">
+            <div class="analysis-box-title">
+                <img src="assets/img/settings.png" alt="Quality Analysis Icon" style="width: 30px; height: 30px; margin-right: 10px;">
+              <h2 class="analysis-title">Technical analysis</h2>
+            </div>
+            <h3 class="analysis-second-title">Source datasets</h3>
+            <p class="analysis-text">
+              All source datasets have been assessed following the 
+              <span class="underlined--bg underlined--offset--bg">
+                <b><a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html"
+                    target="_blank">metadata model</a> established by AGID, </b></span> , which categorizes metadata quality into four levels. This classification is based on two key factors: the strength of the data-metadata relationship and the level of detail provided.
+            </p>
+            <p class="analysis-text">
+              <br>
+              <b>Note:</b>  Further details and reconstructed metadata for the source datasets are available in the <a
+                href="#metadataAnalysisTable">metadata analysis table</a> below.
+            </p>
+            <!-- Tables for source datasets (as in Datasets section)-->
+            <div class="table-responsive">
+              <table class="table table-hover align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Provenience</th>
+                    <th scope="col">Format</th>
+                    <th scope="col" style="width:50%">Metadata</th>
+                    <th scope="col">URI</th>
+                    <th scope="col">License</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">D1</th>
+                    <td>I.Stat</td>
+                    <td>.csv, .xlsx, .xml, .px</td>
+                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
+                        datum-level detail of description. They are machine readable.</td>
+                    <td><a href="http://dati.istat.it/Index.aspx/Index.aspx?DataSetCode=DCIS_POPRES1" target="_blank">2018Population</a></td>
+                    <td>CC BY 3.0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D2</th>
+                    <td>I.Stat</td>
+                    <td>.csv, .xlsx, .xml, .px</td>
+                    <td>Level 4: An SDMX-structured file is available for download, featuring a strong connection between data and metadata, with detailed descriptions at the datum level. These files are machine-readable.
+                     <br> Level 2: Additional metadata, offering clear information about sources and methodologies, is provided on a separate webpage, accessible via a sidebar menu.</td>
+                    <td><a href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,Z0840JUS,1.0/JUS_VIOLENCE/DCCV_RUOLIGEN/IT1,78_1161_DF_DCCV_RUOLIGEN_9,1.0" target="_blank">OpinionsViolenceGeoAreas</a></td>
+                    <td>CC BY 3.0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D3</th>
+                    <td>I.Stat</td>
+                    <td>.csv, .xlsx, .xml, .px</td>
+                    <td>Level 4: An SDMX-structured file is available for download, featuring a strong connection between data and metadata, with detailed descriptions at the datum level. These files are machine-readable.
+                    <br>    Level 2: Additional metadata, offering clear information about sources and methodologies, is provided on a separate webpage, accessible via a sidebar menu. <a href="https://siqual.istat.it/SIQual/visualizza.do?id=0058000"
+                        target="_blank"></a>>webpage</a>, accessible through a sidebar menu</td>
+                    <td><a href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,Z0840JUS,1.0/JUS_VIOLENCE/DCCV_RUOLIGEN/IT1,78_1161_DF_DCCV_RUOLIGEN_12,1.0"
+                        target="_blank">OpinionsPartnerGeoAreas</a>
+                    </td>
+                    <td>CC BY 3.0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D4</th>
+                    <td>I.Stat</td>
+                    <td>.csv, .xlsx, .xml, .px</td>
+                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
+                        datum-level detail of description. They are machine readable.</td>
+                    <td><a href="http://dati.istat.it/Index.aspx?QueryId=56723&lang=en"
+                        target="_blank">Victims</a></td>
+                    <td>CC BY 3.0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D5</th>
+                    <td>I.Stat</td>
+                    <td>.csv, .xlsx, .xml, .px</td>
+                    <td>Level 4: An SDMX structured file is downloadable with a strong data-metadata bond and a
+                        datum-level detail of description. They are machine readable. <a
+                        href="https://siqual.istat.it/SIQual/visualizza.do?id=5000132&refresh=true&language=EN"
+                        target="_blank"></a>>webpage</a>, accessible through a sidebar menu</td>
+                    <td><a href="http://dati.istat.it/Index.aspx?QueryId=50821&lang=en"
+                        target="_blank">ViolenceCauses</a></td>
+                    <td>CC BY 3.0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+     
+            <h3 class="analysis-second-title" >
+              RDF Metadata Assertion of the Datasets
+            </h3>
+
+            <p class="analysis-text">
+              All generated mashup datasets have been meticulously documented using metadata, adhering to the guidelines outlined in the <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html"
+                target="_blank"><b>DCAT-AP_IT</b></a> standard. This choice aligns with the <span
+                class="underlined--bg underlined--offset--bg"><b>Italian Agency for Digitalization (AGID)</b></span> directives for the valorization of public information heritage.<br><br>
+
+              Given that these datasets represent data of significant national interest and are derived from Istat, an Italian public research institution, the adoption of <b>DCAT-AP_IT</b> (2016), was deemed most appropriate. <br>Although this national standard is based on the earlier <b>DCAT v1.0</b> and introduces stricter constraints 
+              compared to the more flexible 
+              <a href="https://www.w3.org/TR/vocab-dcat-3/" target="_blank">DCAT-AP 3.0</a>, 
+              it was chosen because an increasing number of Italian 
+              Public Administrations are aligning with DCAT-AP_IT, ensuring better compatibility within the national ecosystem. 
+              Furthermore, adhering to DCAT-AP_IT allows our datasets to align with detailed national guidelines, thereby facilitating seamless
+              <span class="underlined--bg underlined--offset--bg"><b> interoperability and harmonization</b></span> 
+              with other public data resources in Italy.
+            </p><br>
+
+            <h3 class="analysis-second-title" id="metadataAnalysisTable">
+              Semantic Enrichment of Datasets
+            </h3>
+
+            <p class="analysis-text">
+              The metadata for the source datasets were primarily derived from the original data sources. When metadata was incomplete or unavailable, additional information was inferred and supplemented following the same principles applied to the mashup datasets. For instance, themes were assigned to source datasets based on recognized European Authority standards.
+              To enhance the semantic description of datasets, we have utilized several key ontologies, including <b>DCAT, DCTERMS, PROV, FOAF, ADMS, SKOS, CC</b>, and <b>DCAT-AP IT</b>. These ontologies provide a structured framework for describing datasets and their metadata, ensuring interoperability and adherence to <span class="underlined--bg underlined--offset--bg"><b>Linked Open Data (LOD) standards</b></span>. This approach facilitates the discoverability, understandability, and reuse of datasets across diverse contexts.</p><br>
+            <p class="analysis-text">
+              The <span class="underlined--bg underlined--offset--bg"><b>DCAT (Data Catalog Vocabulary) ontology</b></span> plays a central role, serving to describe datasets and data catalogs and publish them on the Web. Key properties such as <code>dcat:dataset</code>, associate datasets with a catalog, while <code>dcat:theme</code> categorizes datasets by their topics, and <code>dcat:distribution</code> specifies the available data formats. For example, datasets can be linked to themes like population statistics or societal issues using <code>dcat:theme</code>. Learn more about DCAT Version 3 at <a href="https://www.w3.org/TR/vocab-dcat-3/" target="_blank">W3C DCAT</a>.
+            </p>
+            <p class="analysis-text">
+              <span class="underlined--bg underlined--offset--bg"><b>DCTERMS (Dublin Core Terms)</b></span> is used to describe general metadata, including <code>dcterms:title</code> for dataset titles and descriptions, and <code>dcterms:accessRights</code> to indicate accessibility. This inclusion ensures the use of a widely recognized standard for metadata description. More information about DCTERMS can be found at <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank">Dublin Core Terms</a>.
+            </p>
+            <p class="analysis-text">
+              <span class="underlined--bg underlined--offset--bg"><b>ADMS (Asset Description Metadata Schema)</b></span> is included to complement DCAT by describing assets like datasets and services, particularly in government and public administration contexts. ADMS plays an important role in the asset management landscape. For further details, consult the <a href="http://www.w3.org/ns/adms#" target="_blank">ADMS Specification</a>.
+            </p>
+            <p class="analysis-text">
+              <span class="underlined--bg underlined--offset--bg"><b>CC (Creative Commons)</b></span> provides a vocabulary for licensing datasets, such as <code>cc:license</code>, ensuring clear and standardized license attribution. Visit <a href="http://creativecommons.org/ns#" target="_blank">Creative Commons</a> specifications for further insights.
+            </p>
+            <p class="analysis-text">
+              Finally, <span class="underlined--bg underlined--offset--bg"><b>DCAT-AP IT (DCAT Application Profile for Italy)</b></span> is referenced through <code>dcatapit:</code> to align with Italian government open data standards. It extends DCAT to meet specific national requirements. For more information, check out <a href="http://dati.gov.it/onto/dcatapit/" target="_blank">DCAT-AP IT</a>.
+            </p><br>
+
+            <!-- Metadata analysis -->
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true"><b>Catalogue</b></button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><b>Source
+                    Metadata</b></button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><b>Mashup
+                    Metadata</b></button>
+              </div>
+            </nav>
+            <!-- Various tables -->
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <!-- Table for CATALOGUE -->
+                <div class="table-responsive">
+                  <table class="table table-hover align-middle">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Title</th>
+                        <td>Open Voices OADE Project - Datasets Catalog</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Identifier</th>
+                        <td>OpenVoicesCatalog</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Description</th>
+                        <td>Catalog containing the mashup datasets for the project Open Voices</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Publisher</th>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">open voices</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Issued</th>
+                        <td>10/01/2025</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Modified</th>
+                        <td>10/01/2025</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Datasets</th>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices"
+                            target="_blank">MD6</a>, <a
+                            href="https://github.com/Asemica-me/OADE_OpenVoices"
+                            target="_blank">MD7</a>, <a
+                            href="https://github.com/Asemica-me/OADE_OpenVoices"
+                            target="_blank">MD8</a><br>
+                          <a href="https://github.com/Asemica-me/OADE_OpenVoices"
+                            target="_blank">MD9</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hompage</th>
+                        <td><a href=""
+                            target="_blank">Open Voices</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Language</th>
+                        <td>English</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Theme Taxonomy</th>
+                        <td><a
+                            href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme"
+                            target="_blank">European vocabulary for Data theme</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">License</th>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">RDF assertion of metadata</th>
+                        <td><a href="serialization/serial_catalog.ttl" download="OV_datasets_Catalog.ttl">Download RDF</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <!-- Table for ORIGINAL METADATA-->
+                <div class="table-responsive">
+                  <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">Dataset</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Identifier</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Theme</th>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Issued</th>
+                        <th scope="col">Modified</th>
+                        <th scope="col">Accrual periodicity</th>
+                        <th scope="col">Rights holder</th>
+                        <th scope="col">Creator</th>
+                        <th scope="col">Publisher</th>
+                        <th scope="col">Distribution</th>
+                        <th scope="col">Language</th>
+                        <th scope="col">Derived from</th>
+                        <th scope="col">License</th>
+                        <th scope="col">RDF assertion of the metadata</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">D1</th>
+                        <td>Population estimates 2018</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Intercensal population estimates by age, sex and citizenship on 1st January</td>
+                        <td><a
+                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/SOCI"
+                            target="_blank">Population and society</a></td>
+                        <td>2816 demografia e popolazione</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Never</td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a
+                            href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_INTCENSPOP/DCIS_RICPOPRES2011/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0"
+                            target="_blank"> IstatDati database Endpoint</a></td>
+                        <td>Italian, English</td>
+                        <td>
+                          <ul>
+                            <li>Censimento della popolazione (31.12.2018)</li>
+                            <li>Censimenti della popolazione 2001 e 2011</li>
+                            <li>flussi demografici (nascite, decessi, migrazioni, acquisizioni della cittadinanza)
+                              registrati tra i censimenti 2001 e 2018</li>
+                          </ul>
+                        </td>
+                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
+                        <td>
+                          <ul>
+                            <li><a
+                                href="https://demo.istat.it/data/ricostruzione/Ricostruzione-popolazione_2002_2018.pdf"
+                                target="_blank">Download Informative note on population reconstruction 2002-2018
+                                (IT)</a></li>
+                            <li><a
+                                href="https://demo.istat.it/data/ricostruzione/Nota_metodologica_Ricostruzione2002_2018.pdf"
+                                target="_blank">Download methodological note on population reconstruction 2002-2018
+                                (IT)</a></li>
+                            <li><a
+                                href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_INTCENSPOP/DCIS_RICPOPRES2011/IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0"
+                                target="_blank">Download SDMX structured data from IstatData endpoint</a></li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">D2</th>
+                        <td>Opinions about sexual violence </td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Opinions about sexual violence - geographical areas</td>
+                        <td><a
+                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bkc/002.04.02.0500"
+                            target="_blank">Violence</a></td>
+                        <td>
+                            Stereotypes</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Annual</td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a
+                            href="https://esploradati.istat.it/databrowser/#/it/dw/categories/IT1,POP,1.0/POP_POPULATION/DCIS_POPRES1/IT1,22_289_DF_DCIS_POPRES1_1,1.0"
+                            target="_blank"> IstatData</a></td>
+                        <td>Italian, English</td>
+                        <td><a href="https://siqual.istat.it/SIQual/unita.do?id=8889117"
+                            target="_blank">Gender role stereotypes and the social image of violence</a>
+                        </td>
+                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
+                        <td><a
+                            href="https://siqual.istat.it/SIQual/visualizza.do?id=8889117&refresh=true&language=EN"
+                            target="_blank">Additional metadata</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">D3</th>
+                        <td>Acceptability of intimate partner violence</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Acceptability of intimate partner violence - geographical areas
+                        </td>
+                        <td><a
+                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bkc/002.04.02.0500"
+                            target="_blank">Violence</a></td>
+                        <td>Stereotypes</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Annual</td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="http://dati.istat.it/Index.aspx" target="_blank">I.Stat</a></td>
+                        <td>Italian, English</td>
+                        <td><a href="https://siqual.istat.it/SIQual/unita.do?id=8889117"
+                          target="_blank">Gender role stereotypes and the social image of violence</a>
+                      </td>
+                       
+                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
+                        <td><a href="https://siqual.istat.it/SIQual/visualizza.do?id=8889117" target="_blank">additional
+                            Metadata</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">D4</th>
+                        <td>Victims - sex, age class, geographical areas</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Victims turning to 1522 (anti-violence and stalking number)</td>
+                        <td><a
+                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bkc/002.04.02.0500"
+                            target="_blank">Violence</a></td>
+                        <td>Special victim services</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Annual</td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="http://dati.istat.it/Index.aspx" target="_blank">IstatData</a></td>
+                        <td>Italian, English</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
+                        <td><a href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,Z0840JUS,1.0/JUS_VIOLENCE/DCCV_1522_VITTIME/IT1,78_1121_DF_DCCV_1522_VITTIME_1,1.0" target="_blank">additional
+                            Metadata</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">D5</th>
+                        <td>Indication of some causes of intimate partner violence</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Indication of some causes of intimate partner violence - geographical areas<n</td>
+                        <td><a
+                            href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://data.europa.eu/bkc/002.04.02.0500"
+                            target="_blank">Violence</a></td>
+                        <td>Stereotypes</td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td><i class="bi bi-x" style="color: red; font-size: 30px;"></i></td>
+                        <td>Annual</td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="https://www.istat.it/en/" target="_blank">Istituto Nazionale di Statistica</a></td>
+                        <td><a href="http://dati.istat.it/Index.aspx" target="_blank">I.Stat </a></td>
+                        <td>Italian, English</td>
+                        <td>  <a href="https://siqual.istat.it/SIQual/unita.do?id=8889117">Gender role stereotypes and the social image of violence</a></i></td>
+                        <td><a href="https://creativecommons.org/licenses/by/3.0/it/" target="_blank"></a>CC BY 3.0</td>
+                        <td><a href="https://siqual.istat.it/SIQual/visualizza.do?id=8889117&refresh=true&language=EN" target="_blank">additional
+                            Metadata</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <!-- Table for MASHUP METADATA -->
+                <div class="table-responsive">
+                  <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                      <tr>
+                        <th scope="col">Mashup Dataset</th>
+                        <th scope="col">Serie</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Identifier</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Theme</th>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Keywords</th>
+                        <th scope="col">Issued</th>
+                        <th scope="col">Modified</th>
+                        <th scope="col">Accrual periodicity</th>
+                        <th scope="col">Rights holder</th>
+                        <th scope="col">Creator</th>
+                        <th scope="col">Publisher</th>
+                        <th scope="col">Distribution</th>
+                        <th scope="col">Language</th>
+                        <th scope="col">Derived from</th>
+                        <th scope="col">License</th>
+                        <th scope="col">RDF assertion of the metadata</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">MD6</th>
+                        <td>MD6</td>
+                        <td>MD6 - Victims causes indication</td>
+                        <td>MD6</td>
+                        <td>Mashup dataset with an analysis that explores the relationship between the population, victims of violence and the causes of such violence.</td>
+                        <td> <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/temi.html#popolazione-e-societa"
+                          target="_blank"> Population and society</a></td>
+                      <td><a
+                            href="https://publications.europa.eu/resource/authority/eurovoc/drupal/?q=it/request&mturi=http://eurovoc.europa.eu/100214&language=it&view=mt&ifacelang=it"
+                            target="_blank">2836 social protection, 2816 demography and population</a>
+                        </td>
+                        <td>social protection, gender violence, victims of violence, causes of violence, italy</td>
+                        <td>10/01/2025</td>
+                        <td>10/01/2025</td>
+                        <td>Never</td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">OpenVoices</a>
+                        </td>
+                        <td><a href="" target="_blank">Lucrezia Pograri, Chiara Martina</a></td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">OpenVoices</a>
+                        </td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">CSV distribution of
+                            Open Voices MD1 for the year 2017</a> </td>
+                        <td>English</td>
+                        <td><a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">D1</a>,
+                          <a href="http://dati.istat.it/index.aspx?queryid=24349" target="_blank">D3</a>
+                        </td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
+                        <td><a href="serialization/serial_datasets.ttl" download="OV_RDF_datasets.ttl">Download RDF</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">MD7</th>
+                        <td>MD7</td>
+                        <td>MD7 - Geographical Distribution of Female Victims</td>
+                        <td>MD7</td>
+                        <td>Mashup dataset with exploration of the geographical distribution of female victims of violence</td>
+                        <td> <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/temi.html#popolazione-e-societa"
+                          target="_blank"> Population and society</a></td>
+                      <td><a
+                            href="https://publications.europa.eu/resource/authority/eurovoc/drupal/?q=it/request&mturi=http://eurovoc.europa.eu/100214&language=it&view=mt&ifacelang=it"
+                            target="_blank">2836 social protection, 2816 demography and population</a>
+                        </td>
+                        <td>social protection, violence against womans, victims of violence, gender violence, italy</td>
+                        <td>10/01/2025</td>
+                        <td>10/01/2025</td>
+                        <td>Never</td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">OpenVoices</a>
+                        </td>
+                        <td><a href="" target="_blank">Lucrezia Pograri, Chiara Martina</a></td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">OpenVoices</a>
+                        </td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">CSV distribution of
+                            Open Voices MD1 for the year 2018</a> </td>
+                        <td>English</td>
+                        <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">D2</a>,
+                          <a href="http://dati.istat.it/index.aspx?queryid=24349" target="_blank">D3</a>
+                        </td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
+                        <td><a href="serialization/serial_datasets.ttl" download="OV_RDF_datasets.ttl">Download RDF</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">MD8</th>
+                        <td>MD8</td>
+                        <td>MD8 - Geographical Distribution of Males Victims </td>
+                        <td>MD8</td>
+                        <td>Mashup dataset with exploration of the geographical distribution of males victims of violence</td>
+                        <td> <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/temi.html#popolazione-e-societa"
+                          target="_blank"> Population and society</a></td>
+                      <td><a
+                            href="https://publications.europa.eu/resource/authority/eurovoc/drupal/?q=it/request&mturi=http://eurovoc.europa.eu/100214&language=it&view=mt&ifacelang=it"
+                            target="_blank">2836 social protection, 2816 demography and population</a>
+                        </td>
+                        <td>social protection, gender violence, victims of violence, italy</td>
+                        <td>10/01/2025</td>
+                        <td>10/01/2025</td>
+                        <td>Never</td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">OpenVoices</a>
+                        </td>
+                        <td><a href="" target="_blank">Lucrezia Pograri, Chiara Martina</a></td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">OpenVoices</a>
+                        </td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank"> CSV distribution
+                            of Open Voices MD1 for the year 2019</a> </td>
+                        <td>English</td>
+                        <td><a href="https://demo.istat.it/app/?i=POS&l=en" target="_blank">D2</a>,
+                          <a href="http://dati.istat.it/index.aspx?queryid=24349" target="_blank">D3</a>
+                        </td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
+                        <td><a href="serialization/serial_datasets.ttl" download="OV_RDF_datasets.ttl">Download RDF</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">MD9</th>
+                        <td>MD9</td>
+                        <td>MD9 - Geographical Distribution of Total Victims  </td>
+                        <td>MD9</td>
+                        <td>Mashup dataset with exploration of the geographical distribution of total victims of violence</td>
+                        <td> <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/temi.html#popolazione-e-societa"
+                          target="_blank"> Population and society</a></td>
+                      <td><a
+                            href="https://publications.europa.eu/resource/authority/eurovoc/drupal/?q=it/request&mturi=http://eurovoc.europa.eu/100214&language=it&view=mt&ifacelang=it"
+                            target="_blank">2836 social protection, 2816 demography and population</a>
+                        </td>
+                        <td>social protection, violence against womans, victims of violence, gender violence, italy</td>
+                        <td>10/01/2025</td>
+                        <td>10/01/2025</td>
+                        <td>Never</td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">OpenVoices</a>
+                        </td>
+                        <td><a href="" target="_blank">Lucrezia Pograri, Chiara Martina</a></td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank">OpenVoices</a>
+                        </td>
+                        <td><a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank"> CSV distribution
+                            of Open Voices MD2 for the year 2017</a> </td>
+                        <td>English</td>
+                        <td><a href="https://demo.istat.it/app/?i=RIC&l=en" target="_blank">D1</a>,
+                          <a href="https://esploradati.istat.it/databrowser/#/en/dw/categories/IT1,POP,1.0/POP_BIRTHFERT/DCIS_NATI1/DCIS_NATI1_PARENT_CHARACT/IT1,25_74_DF_DCIS_NATI1_8,1.0"
+                            target="_blank">D4</a>,
+                          <a href="http://dati.istat.it/index.aspx?queryid=29218" target="_blank">D5</a>,
+                          <a href="http://dati.istat.it/index.aspx?queryid=7098" target="_blank">D6</a>
+                        </td>
+                        <td><a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></td>
+                        <td><a href="serialization/serial_datasets.ttl" download="OV_RDF_datasets.ttl">Download RDF</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- FAIR principles -->
+            <h3 class="analysis-second-title">FAIR principles</h3>
+            <p class="analysis-text">
+              During the project development, we aimed to align our efforts with the <a
+                href="https://www.go-fair.org/fair-principles/" target="_blank"><b>FAIR principles</b></a> established by the <b>GO FAIR Initiative</b>.
+              <br>
+              These principles, developed by a consortium of scientists and organizations, provide <span class="underlined--bg underlined--offset--bg"><b>guidelines</b></span>  to ensure digital assets are
+              <b>Findability</b>, <b>Accessibility</b>, <b>Interoperability</b>, <b>Reusability</b>, with a strong emphasis on machine-actionability.
+            </p>
+            <p class="analysis-text">The table below utilizes the FAIR Principles overview from GO FAIR as a checklist to systematically evaluate our project’s adherence to these guidelines.</p>
+            <!-- FAIR accordion -->
+            <div class="accordion" id="accordionexample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne-FAIR" aria-expanded="true" aria-controls="collapseOne-FAIR">
+                    Findability
+                  </button>
+                </h2>
+                <div id="collapseOne-FAIR" class="accordion-collapse collapse" aria-labelledby="headingOne-FAIR"
+                  data-bs-parent="#accordionexample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">(Meta)data are assigned a globally unique and persistent identifier
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Data are described with rich metadata (defined by R1 below)
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Metadata clearly and explicitly include the identifier of the data they
+                            describe</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">(Meta)data are registered or indexed in a searchable resource
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo-FAIR" aria-expanded="false" aria-controls="collapseTwo-FAIR">
+                    Accessibility
+                  </button>
+                </h2>
+                <div id="collapseTwo-FAIR" class="accordion-collapse collapse" aria-labelledby="headingTwo-FAIR"
+                  data-bs-parent="#accordionexample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">(Meta)data are retrievable by their identifier using a standardised
+                            communications protocol</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">The communication protocol is open, free, and universally implementable</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">The communication protocol allows for an authentication and authorisation
+                            procedure, where necessary</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Metadata are accessible, even when the data are no longer available</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree-FAIR" aria-expanded="false" aria-controls="collapseThree-FAIR">
+                    Interoperability
+                  </button>
+                </h2>
+                <div id="collapseThree-FAIR" class="accordion-collapse collapse" aria-labelledby="headingThree-FAIR"
+                  data-bs-parent="#accordionexample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">(Meta)data use a formal, accessible, shared, and broadly applicable language
+                            for knowledge representation.</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">(Meta)data use vocabularies that follow FAIR principles</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">(Meta)data include qualified references to other (meta)data</th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour-FAIR" aria-expanded="false" aria-controls="collapseFour-FAIR">
+                    Reusability
+                  </button>
+                </h2>
+                <div id="collapseFour-FAIR" class="accordion-collapse collapse" aria-labelledby="headingFour-FAIR"
+                  data-bs-parent="#accordionexample">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">To check:</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">(Meta)data are richly described with a plurality of accurate and relevant
+                            attributes
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">(Meta)data are released with a clear and accessible data usage license
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">(Meta)data are associated with detailed provenance
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">(Meta)data meet domain-relevant community standards
+                          </th>
+                          <td><i class="bi bi-check-lg" style="color: #3c5950; font-size: 24px;"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section><!-- End Analyses Section -->
+
+
+
+
+    <!-- ======= Processing Section ======= -->
+    <section id="pre" class="about section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Preprocessing of data</h2>
+        </div>
+        <!-- Introduction to the visualizations-->
+        <div class="row content" data-aos="fade-up">
+          <div class="pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              The source datasets were processed using KNIME software, a powerful platform for data analytics and workflow automation. Various operations were carried out to clean, preprocess, and mash up the data, ensuring that it was structured and ready for analysis. 
+              <br>These operations included data cleansing steps such as handling missing values, standardizing formats, and removing duplicates, as well as combining multiple data sources to create the mashup dataset. The entire workflow, which outlines each step of the data transformation process, is available for download here, providing full transparency and enabling replication of the analysis.</p>
+          </div>
+          <div class="pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <p>
+        
+              <img src="workflow.svg" alt="Workflow KNIME" width="100%" />
+            </p>
+            <p>The entire workflow, which outlines each step of the data transformation process, is available for consultaion in the image above, providing full transparency and enabling replication of the analysis.</p>
+            <p>
+              Additionally, the KNIME workflow is available for download <a href="KNIME_project.knwf" download="KNIME_project.knwf">here</a>, allowing users to access the cleaned and integrated data for their own analysis or research purposes.
+            </p>
+          </div>
+        </div>    
+
+
+
+    <!-- ======= Visualizations Section ======= -->
+    <section id="viz" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Visualizations</h2>
+        </div>
+  <p>
+    Various graphic representations of the data facilitate a deeper exploration of the project’s topic, allowing for the analysis of potential correlations between key factors across different regions. Together, these visualizations present the data in an engaging and accessible manner, supporting a comprehensive analysis of the topic.<br><br>
+    The visualizations have been created using two libraries: <b>Leaflet.js</b> for the map and <b>Plotly.js</b> for the bar charts and bubble chart.<br><br>Below are the types of visualizations used:<br>
+  </p>
+
+    <h5><span class="underlined underlined--offset"><b>Bar Charts</b></span></h5>
+    <p class="analysis-text">
+      This type of visualization provides an immediate, clear comparison of values for each of the variables, offering a straightforward way to assess differences across regions.
+    </p>
+
+        <!-- Introduction to the visualizations-->
+        <p>
+                The following three charts present datasets on opinions about gender roles and violence against women among adults in Italy, based on the 2018 survey on gender role stereotypes and the social image of violence. 
+                The survey, conducted by Istat in partnership with the Equal Opportunities Department, explores cultural models and factors influencing attitudes toward violence. 
+                They examine the spread of gender stereotypes, acceptability of violence, its causes, and attitudes toward sexual violence. <span
+              class="underlined--bg-g underlined--offset--bg-g"><b>the spread of gender stereotypes</b> </span>(D2), <span
+              class="underlined--bg-g underlined--offset--bg-g"><b>acceptability of violence</b></span> (D3), <span
+                class="underlined--bg-g underlined--offset--bg-g"><b> its causes</b></span> ,(D5) and attitudes toward sexual violence.
+            </p>
+
+
+        
+        <!-- Opinions section (directly visible) -->
+        <div class="section-title justify-content-center" data-aos="fade-up" data-aos-delay="250">
+          <p class="factor-text">Opinions about sexual violence </p>
+          <p>
+            This chart explores the point of view of Italian adults on gender roles and sexual violence, broken down by region. The bar graph shows the degree of agreement with various stereotypes. The data show how different regions of Italy respond to these beliefs, highlighting cultural and social variations in perceptions of violence against women.  
+          </p>
+          <br>
+        
+          <div class="container time-series align-items-center justify-content-center" data-num="1">
+            <div class="chart-container-wrapper">
+              <div id="chart-container"></div>
+        
+              <div id="controls">
+                <h2>Controls</h2>
+                <div>
+                    <label for="region-dropdown">Choose a region:</label>
+                    <select id="region-dropdown">
+                    </select>
+                </div>
+                <label for="region-dropdown">Select a stereotype:</label>
+                <div id="stereotype-checkboxes" class="stereotype-checkboxes"></div>
+              </div>
+            </div>
+            <p><span
+              class="underlined--bg-g underlined--offset--bg-g"><b>Results:</b> </span>
+              Regional differences in perceptions of sexual violence in Italy are evident. This thesis highlights the wide regional differences in perceptions of sexual violence in Italy.
+              Northern regions, such as Tuscany and Lombardy, show a greater awareness and strong disagreement about misconceptions about sexual violence, as the idea that women can provoke violence with their clothing or that violence within marriage is not considered to be such.</p>
+          </div>
+        </div>
+        
+        <!-- Violence section (directly visible) -->
+        <div class="section-title justify-content-center" data-aos="fade-up" data-aos-delay="250">
+          <p class="factor-text">Acceptability of intimate partner violence</p>
+          <p>
+            This chart examines the acceptability of intimate partner violence in different regions of Italy. The bar graph shows the acceptability of various violent behaviors. The data shows the percentage of people who consider these behaviors acceptable or not, broken down by region, contributing to an understanding of cultural differences in opinion about domestic violence.
+          </p>
+          <br>
+        
+          <div class="container time-series align-items-center justify-content-center" data-num="1">
+            <div class="chart-container-wrapper">
+                <div id="chart-container-victims"></div>
+        
+                <div id="controls-victims">
+                    <h2>Controls</h2>
+                    <div>
+                        <label for="region-dropdown-victims">Choose a region:</label>
+                        <select id="region-dropdown-victims" onchange="updateChartVictims()">
+                        </select>
+                    </div>
+                    <label for="region-dropdown">Select a behavior:</label>
+                    <div id="stereotype-checkboxes-victims" class="checkbox-container-victims">
+                    </div>
+                </div>
+            </div>
+            <p><span
+              class="underlined--bg-g underlined--offset--bg-g"><b>Results:</b> </span>
+              In contrast, in regions such as Calabria, Puglia or Liguria, more permissive and stereotyped views persist, with significant percentages of people justifying or minimizing sexual violence. These findings suggest the importance of targeted educational interventions to raise public awareness and reduce the gap in regional perceptions, in order to promote a culture of respect and awareness about gender violence. 
+              The differences between regions indicate a significant variation in the perception of acceptability of violence. Regions such as Lazio, Sardinia and Piedmont show a clear opposition to couple violence, while in regions like Abruzzo and Basilicata there are still worrying margins of tolerance. In some regions, conditional or partial acceptance of these behaviors suggests that gender stereotypes and cultural norms permissive towards control or violence may persist.</div>
+        </div>
+        
+        <!-- Causes section (directly visible) -->
+        <div class="section-title justify-content-center" data-aos="fade-up" data-aos-delay="250">
+          <p class="factor-text">Indication of some causes of intimate partner violence </p>
+          <p>
+            This chart explores the perceived causes of violence in intimate relationships in different regions of Italy. The data show how often each factor is identified as a cause of violence, contributing to a deeper understanding of the cultural and social roots of this phenomenon.
+          </p>
+          <br>
+        
+          <div class="container time-series align-items-center justify-content-center" data-num="1">
+            <div class="chart-container-wrapper">
+                <div id="chart-container-causes"></div>
+        
+                <div id="controls-causes">
+                    <h2>Controls</h2>
+        
+                    <div id="region-dropdown-container-causes">
+                        <label for="region-dropdown-causes">Choose a region:</label>
+                        <select id="region-dropdown-causes" onchange="updateChart()">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p><span
+              class="underlined--bg-g underlined--offset--bg-g"><b>Results:</b> </span>
+              The data show a marked regional disparity in the factors associated with gender-based violence in Italy. Regions such as Friuli Venezia Giulia and Emilia Romagna emerge with the highest rates in several categories, such as women’s perception as property and the need for superiority towards their partners, indicating a persistent rooting of gender stereotypes. Factors such as drug or alcohol abuse, prevalent in Sardinia, and childhood experiences of domestic violence, widespread in Basilicata, underline the importance of addressing the root causes of violence, including addiction and intergenerational transmission. Although some regions, such as Piedmont and Sardinia, show a clear opposition to violence, 
+              the presence of tolerant attitudes in other areas highlights the need for targeted interventions. Finally, it is crucial to promote cultural change through educational campaigns, strengthen psychological support and intervene on addictions to reduce regional disparities and prevent gender violence in a sustainable and effective way. 
+          </div>
+        </div>
+        
+
+      
+<!-- VISUALISATIONS -->     
+<div class="row content">
+  <div class="pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="150" style="padding-bottom: 1em;">
+  
+    <h5><span class="underlined underlined--offset"><b>Choropleth Map</b></span></h5>
+        <div class="container" data-aos="fade-up">
+          <p class="analysis-text">
+            Choropleth map serves as the most effective method to visually display regional variations in our data, highlighting trends and correlations across geographical areas. The victims' values are presented as numbers, while regional clusters are generated through data normalization by population, applying the k-means algorithm to the rate of victims per 100,000 inhabitants. This map allows us to observe general trends in population and violence victimization rates. Higher rates are seen in regions like Lazio, Campania, and Abruzzo, while the lowest rates, often due to lower population density, are found in Molise. Other regions, such as Valle d'Aosta, Trentino Alto Adige, and Molise, report lower victimization rates, with most regions falling in between these extremes.<br>
+            The k-means algorithm has been used to divide the Italian geographical areas into three clusters, based on the victims rate:
+          <ul>
+            <li><b><i class="ri-check-double-line"></i> Low intensity cluster (0-11%)</b></li>
+            <li><b><i class="ri-check-double-line"></i> Medium intensity cluster (12-16%)</b></li>
+            <li><b><i class="ri-check-double-line"></i> High intensity cluster (17% e oltre)</b></li>
+          </ul>
+          </p>
+        </div>
+    </div>
+</div>
+
+
+
+          <!-- GRAFICI (mappa it + bar chart vittime) -->
+          <div class="container analysis-card" id="geo-map" data-bs-parent="#results" data-aos="fade-up">
+            <div class="align-items-stretch mb-5 mb-lg-0">
+              <div class="analysis-box">
+                <div class="analysis-box-title">
+                  <h4 class="year-result-text">Victims of violence by geographical areas</h4>
+                </div>
+  
+                  <!-- Map -->
+                  <div class="row justify-content-center" id="map-container">
+                    <div class="col-md-12">
+                      <div class="map" id="map_regions" style="width: 100%; height: 100vh;"></div>
+                    </div>
+                  </div>
+  
+                  <hr>
+                  <!-- bar chart victims -->
+                  <div class="container-bar-vic">
+                    <div class="analysis-box-title">
+                    <h4 class="year-result-text">Victims per 100k inhabitants</h4>
+                    <p>
+                      Highest rate: Lazio 21.34%<br>
+                      Lowest rate: Molise 7.90%
+                    </p>
+                  </div>
+  
+                  <div id="grafico"></div>
+                </div>
+              </div>
+            </div> 
+          </div>
+
+
+      
+<!-- VISUALISATIONS -->     
+<div class="row content">
+  <div class="pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="150" style="padding-bottom: 1em;">
+
+    <h5><span class="underlined underlined--offset"><b>Bubble chart</b></span></h5>
+    <div class="container" data-aos="fade-up">
+    <p class="analysis-text">
+        The chart compares various causes of violence across Italian territories, revealing significant regional differences. Key causes such as "considering women to be property" and "abuse of drugs or alcohol" show strong correlations with higher victimization rates, especially in regions like Lombardia and Friuli-Venezia Giulia. Causes like "religious reasons" have a lower impact, while societal factors like the need for men to feel superior to their partners remain consistent across many areas. The analysis highlights the complex regional patterns of violence, emphasizing the need for targeted interventions based on specific territorial dynamics.
+    </p>
+    </div>
+
+    <div class="container">
+        <div class="row content" data-aos="fade-up" data-aos-delay="250">
+          <div class="section-title justify-content-center">
+          <div class="pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="150" style="padding-bottom: 1em;">
+          <br>
+          </div>
+          <div id="content-bubble-chart" class="chart-wrapper">
+              <div id="bubble-chart" style="width: 100%; height: 700px;"></div>
+            </div>
+  
+        </div>
+    </div>
+</div>
+  </section>
+    <!-- End Visualizations Section -->
+
+
+
+    <!-- ======= Sustainability Section ======= -->
+    <section id="sustain" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Sustainability of the project</h2>
+        </div>
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              The source datasets used for this project are provided exclusively by the <span class="underlined underlined--offset"><b>
+                Italian National
+                Institute of Statistics
+               (Istat)</b></span>, which maintains them in its various databases. However, due to the ongoing transition of Istat's content to IstatData, the URIs provided in this project may eventually become obsolete.
+            </p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              <i><b>Open Voices</b></i> is the <span class="underlined underlined--offset"><b>final project</b></span> developed for the <i>Open Access and Digital Ethics</i> course (a.y. 2024/2025) within the Digital Humanities and Digital Knowledge Master's Degree (University of Bologna). As such, it is <span class="underlined underlined--offset"><b>not actively maintained</b></span> and <span class="underlined underlined--offset"><b>will not be updated</b></span> in the future.
+            </p>
+          </div>
+        </div>
+    </section><!-- End Sustainability Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team & Statement of responsibility</h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="assets/img/team/bloom.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:lucrezia.pograri@studio.unibo.it"><i class="bi bi-envelope"></i></a>
+                  <a href="https://www.linkedin.com/in/lucrezia-pograri-7a056b24a/" target="_blank"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Lucrezia Pograri</h4>
+                <p>Project ideation — Data retrieval — KNIME preprocessing — Mashup datasets — Visualizations — RDF metadata assertion — Website development</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="assets/img/team/stella.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="mailto:chiara.martina@studio.unibo.it"><i class="bi bi-envelope"></i></a>
+                  <a href="" target="_blank"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Chiara Martina</h4>
+                <p>Project ideation — Data retrieval — KNIME preprocessing — Mashup datasets — Analyses — Visualizations — Website development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= License Section ======= -->
+    <section id="license" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Licenses and credits</h2>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <h4>Images and icons</h4>
+            <p>
+              All the icons are taken from <a href="https://icons8.it/" title="fav-icon"
+                target="_blank">ICONS8</a>. They are available for
+                unrestricted commercial and noncommercial use without permission or fee (<a
+                  href="https://creativecommons.org/publicdomain/zero/1.0/legalcode" target="_blank">CC0</a>)
+            </p>
+            <p>Image on homepage by the freelance illustrator Hanna Barczyk (c) 2024</p>
+                <h4>Source Datasets</h4>
+                <p>
+                  Creative Commons Attribution 3.0 Unported (<a href="https://creativecommons.org/licenses/by/3.0/legalcode"
+                    target="_blank">CC BY 3.0</a>)
+                </p>
+                <h4>Mashup Datasets</h4>
+                <p>Creative Commons Attribution 4.0 International (<a
+                    href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">CC BY 4.0</a>)
+                </p>
+          </div>
+          <div class="col-lg-6">
+            <h4>Softwares used</h4>
+            <p>
+              <b>Leaflet.js</b>: Copyright (c) 2010-2023, Volodymyr Agafonkin Copyright (c) 2010-2011, CloudMade - All rights reserved (<a href= "https://github.com/Leaflet/Leaflet/blob/main/LICENSE">BSD 2-Clause "Simplified" License</a>)
+            </p>
+            <p>
+              <b>Plotly.js</b>: Copyright (c) 2021 Plotly, Inc - All rights reserved (<a href="https://github.com/plotly/plotly.js/blob/master/LICENSE">MIT License</a>)
+            </p>
+            <p>
+              <b>KNIME</b>: Copyright (c) 2007 Free Software Foundation, Inc. (<a href="https://www.knime.com/downloads/full-license">General Public License (GPL), Version 3</a>)
+            </p>
+
+            <h4>Web template</h4>
+            <p>This website is built on the HTML5 template <a
+                href="https://bootstrapmade.com/vesperr-free-bootstrap-template/" target="_blank">"Vesperr"</a> by <a
+                href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a> and released under <a
+                href="https://opensource.org/licenses/MIT" target="_blank">MIT</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End License Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Open Voices</strong>. All Rights Reserved<br>
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>  -->
+          </div>
+        </div>
+        <br>
+        <div class="text-lg-left text-center footer-text">
+          This project is developed for the <a
+            href="https://www.unibo.it/en/study/phd-professional-masters-specialisation-schools-and-other-programmes/course-unit-catalogue/course-unit/2024/424645" target="_blank"><i>Open Access
+            and Digital
+            Ethics</i></a>
+          course (a.y. 2024/2025)
+          within the <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank">Digital
+            Humanities and Digital
+            Knowledge Masters Degree</a> at <a href="https://www.unibo.it/en/homepage" target="_blank">Alma Mater
+            Studiorum -
+            University of
+            Bologna</a>
+        </div>
+        <div class="text-lg-left text-center footer-github">
+          <a href="https://github.com/Asemica-me/OADE_OpenVoices" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="" class="bi bi-github"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Leaflet map -->
+  <script src="assets/js/map/geomap.js"></script>
+  <!-- bar chart under map -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="assets/js/bar_victims/vic_chart.js"></script>
+
+  <script src="assets/js/italy_regions.js"></script>
+<!-- bar graphs -->
+  <script src="assets/js/plotly_graphs/bar-charts/bar-percentage-17.js"></script>
+  <script src="assets/js/plotly_graphs/bar-charts/bar-percentage-18.js"></script>
+  <script src="assets/js/plotly_graphs/bar-charts/bar-percentage-19.js"></script>
+
+<!-- bubble chart -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="visualisations/bubble/bubble_chart.js"></script>
+
+</body>
+</html>
