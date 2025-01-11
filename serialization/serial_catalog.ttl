@@ -6,24 +6,24 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://github.com/Chiaramartina/Open-Voices/tree/main/data> a dcat3:Catalog ;
+<https://github.com/Asemica-me/OADE_OpenVoices/tree/main/data> a dcat3:Catalog ;
     dct:description "Catalog containing the datasets for the Open Voices project"@en ;
     dct:issued "2025-01-01"^^xsd:date ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:title "Open Voices OADE Project - Datasets Catalog"@en ;
     adms:identifier "OV-Catalog"^^xsd:string ;
-    prov:wasAttributedTo <https://github.com/Chiaramartina/Open-Voices> ;
-    dcat3:dataset <https://github.com/Chiaramartina/Open-Voices/blob/main/data/mashup/D1_D4_D5.csv>,
-        <https://github.com/Chiaramartina/Open-Voices/blob/main/data/mashup/D1_D4_FEMALES.csv>,
-        <https://github.com/Chiaramartina/Open-Voices/blob/main/data/mashup/D1_D4_MALES.csv>,
-        <https://github.com/Chiaramartina/Open-Voices/blob/main/data/mashup/D1_D4_TOTAL.csv>,
-        <https://github.com/Chiaramartina/Open-Voices/blob/main/data/mashup/kmean_clusters.csv>,
-        <https://github.com/Chiaramartina/Open-Voices/blob/main/data/original/D1_POPULATION.csv>,
-        <https://github.com/Chiaramartina/Open-Voices/blob/main/data/original/D2_OPINIONS_VIOLENCE_GEOAREAS.csv>,
-        <https://github.com/Chiaramartina/Open-Voices/blob/main/data/original/D3_OPINIONS_PARTNER_GEOAREAS.csv>,
-        <https://github.com/Chiaramartina/Open-Voices/blob/main/data/original/D4_VICTIMS.csv>,
-        <https://github.com/Chiaramartina/Open-Voices/blob/main/data/original/D5_CAUSES_INDICATION.csv> ;
+    prov:wasAttributedTo <https://github.com/Asemica-me/OADE_OpenVoices> ;
+    dcat3:dataset "D1_POPULATION",
+        "D2_OPINIONS_VIOLENCE_GEOAREAS",
+        "D3_OPINIONS_PARTNER_GEOAREAS",
+        "D4_VICTIMS",
+        "D5_VIOLENCE_CAUSES",
+        "MD5_kmean_clusters",
+        "MD6_VICTIMS_CAUSES_INDICATION",
+        "MD7_VICTIMS_GEO_FEMALES",
+        "MD8_VICTIMS_GEO_MALES",
+        "MD9_VICTIMS_GEO_TOTAL" ;
     dcat3:language "en"^^xsd:language .
 
 <https://creativecommons.org/licenses/by/4.0/> a cc:License ;

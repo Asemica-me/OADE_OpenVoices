@@ -1,6 +1,6 @@
 @prefix dcat3: <https://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix ov: <https://github.com/Chiaramartina/Open-Voices> .
+@prefix ov: <https://github.com/Asemica-me/OADE_OpenVoices> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 

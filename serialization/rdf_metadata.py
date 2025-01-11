@@ -38,7 +38,6 @@ datasets = [
         "first_production_year": "2018",
         "publisher": "https://viaf.org/viaf/1649148814291645330008/#Istituto_centrale_di_statistica_(Italy)",
         "license": "https://creativecommons.org/licenses/by/3.0/",
-        "uri": ""
     },
     {
         "id": "D2_OPINIONS_VIOLENCE_GEOAREAS",
@@ -48,7 +47,6 @@ datasets = [
         "first_production_year": "2018",
         "publisher": "https://viaf.org/viaf/1649148814291645330008/#Istituto_centrale_di_statistica_(Italy)",
         "license": "https://creativecommons.org/licenses/by/3.0/",
-        "uri": "https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/blob/main/data/original/D2_OPINIONS_VIOLENCE_GEOAREAS.csv"
     },
     {
         "id": "D3_OPINIONS_PARTNER_GEOAREAS",
@@ -57,8 +55,7 @@ datasets = [
         "theme": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
         "first_production_year": "2018",
         "publisher": "https://viaf.org/viaf/1649148814291645330008/#Istituto_centrale_di_statistica_(Italy)",
-        "license": "https://creativecommons.org/licenses/by/3.0/",
-        "uri": "https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/blob/main/data/original/D3_OPINIONS_PARTNER_GEOAREAS.csv"
+        "license": "https://creativecommons.org/licenses/by/3.0/",    
     },
     {
         "id": "D4_VICTIMS",
@@ -68,7 +65,6 @@ datasets = [
         "first_production_year": "2018",
         "publisher": "https://viaf.org/viaf/1649148814291645330008/#Istituto_centrale_di_statistica_(Italy)",
         "license": "https://creativecommons.org/licenses/by/3.0/",
-        "uri": "https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/blob/main/data/original/D4_VICTIMS.csv"
     },
     {
         "id": "D5_VIOLENCE_CAUSES",
@@ -78,7 +74,6 @@ datasets = [
         "first_production_year": "2018",
         "publisher": "https://viaf.org/viaf/1649148814291645330008/#Istituto_centrale_di_statistica_(Italy)",
         "license": "https://creativecommons.org/licenses/by/3.0/",
-        "uri": "https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/blob/main/data/original/D5_CAUSES_INDICATION.csv"
     },
     {
         "id": "MD6_VICTIMS_CAUSES_INDICATION",
@@ -89,7 +84,6 @@ datasets = [
         "first_production_year": "2024",
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "publisher": ["https://github.com/Chiaramartina", "https://github.com/Asemica-me"],
-        "uri": "https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/blob/main/data/mashup/D1_D4_D5.csv"
     },
     {
         "id": "MD5_kmean_clusters",
@@ -99,8 +93,7 @@ datasets = [
         "theme": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
         "first_production_year": "2024",
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "publisher": ["https://github.com/Asemica-me"],
-        "uri": "https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/blob/main/data/mashup/kmean_clusters.csv"
+        "publisher": ["https://github.com/Asemica-me"]
     },
     {
         "id": "MD9_VICTIMS_GEO_TOTAL",
@@ -110,8 +103,7 @@ datasets = [
         "theme": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
         "first_production_year": "2024",
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "publisher": ["https://github.com/Chiaramartina", "https://github.com/Asemica-me"],
-        "uri": "https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/blob/main/data/mashup/D1_D4_TOTAL.csv"
+        "publisher": ["https://github.com/Chiaramartina", "https://github.com/Asemica-me"]
     },
     {
         "id": "MD7_VICTIMS_GEO_FEMALES",
@@ -121,8 +113,7 @@ datasets = [
         "theme": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
         "first_production_year": "2024",
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "publisher": ["https://github.com/Chiaramartina", "https://github.com/Asemica-me"],
-        "uri": "https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/blob/main/data/mashup/D1_D4_FEMALES.csv"
+        "publisher": ["https://github.com/Chiaramartina", "https://github.com/Asemica-me"]
     },
     {
         "id": "MD8_VICTIMS_GEO_MALES",
@@ -132,16 +123,15 @@ datasets = [
         "theme": "http://publications.europa.eu/resource/authority/data-theme/SOCI",
         "first_production_year": "2024",
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "publisher": ["https://github.com/Chiaramartina", "https://github.com/Asemica-me"],
-        "uri": "https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/blob/main/data/mashup/D1_D4_MALES.csv"
+        "publisher": ["https://github.com/Chiaramartina", "https://github.com/Asemica-me"]
     },
 ]
 
 # Creazione dei dataset
 for dataset in datasets: 
     dataset_uri = OV[dataset["id"]]
-    catalog_g.add((URIRef("https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/tree/main/data"),
-                   DCAT.dataset, URIRef(dataset["uri"])))
+    catalog_g.add((URIRef("https://github.com/Asemica-me/OADE_OpenVoices/tree/main/data"),
+                   DCAT.dataset, Literal(dataset["id"])))
     g.add((dataset_uri, DCAT.title, Literal(dataset["title"], lang="en")))
     g.add((dataset_uri, RDF.type, DCAT.Dataset))
     g.add((dataset_uri, RDF.type, PROV.Entity))
@@ -166,12 +156,12 @@ for dataset in datasets:
 
 
 # Aggiungi informazioni al catalogo
-catalog_uri = URIRef("https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices/tree/main/data")
+catalog_uri = URIRef("https://github.com/Asemica-me/OADE_OpenVoices/tree/main/data")
 catalog_g.add((catalog_uri, RDF.type, DCAT.Catalog))
 catalog_g.add((catalog_uri, DCTERMS.title, Literal("Open Voices OADE Project - Datasets Catalog", lang="en")))
 catalog_g.add((catalog_uri, DCTERMS.description,
                Literal("Catalog containing the datasets for the Open Voices project", lang="en")))
-catalog_g.add((catalog_uri, PROV.wasAttributedTo, URIRef("https://github.com/Asemica-me/OADE_OpenVoices/tree/main  https://github.com/Asemica-me/OADE_OpenVoices")))
+catalog_g.add((catalog_uri, PROV.wasAttributedTo, URIRef("https://github.com/Asemica-me/OADE_OpenVoices")))
 catalog_g.add((catalog_uri, DCTERMS.issued, Literal("2025-01-01", datatype=XSD.date)))
 catalog_g.add((catalog_uri, DCTERMS.modified, Literal("2025-01-01", datatype=XSD.date)))
 catalog_g.add((catalog_uri, DCTERMS.license, URIRef("https://creativecommons.org/licenses/by/4.0/")))
