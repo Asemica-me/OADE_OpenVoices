@@ -2316,3 +2316,37 @@ h3.analysis-second-title {
   font-weight: bold !important;
 }
 
+
+
+/* Selettore per la tabella all'interno della sezione con ID rdf-gist */
+#rdf-gist table {
+  width: 80%;
+  margin: 0 auto; 
+  border-collapse: collapse;
+  background-color: #1d050ef5;
+  border-radius: 20px;
+  overflow: hidden; 
+}
+
+/* Selettore per le celle della tabella all'interno della sezione rdf-gist */
+#rdf-gist table td, #rdf-gist table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: white;
+  border: 1px solid #322c31;
+}
+
+/* Selettore per le intestazioni della tabella all'interno della sezione rdf-gist */
+#rdf-gist table th {
+  color: white;
+  text-align: left;
+}
+
+/* Aggiungi effetto hover sulle righe della tabella */
+#rdf-gist table tr:hover {
+  background-color: #3a3037; /* Colore di sfondo durante il passaggio del cursore */
+}
+
+.gist .pl-s, .gist .pl-pds, .gist .pl-s .pl-pse .pl-s1, .gist .pl-sr, .gist .pl-sr .pl-cce, .gist .pl-sr .pl-sre, .gist .pl-sr .pl-sra {
+  color: #ff64e5 !important;
+}
