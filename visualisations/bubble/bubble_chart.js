@@ -178,13 +178,13 @@ const traces = causes.map(cause => {
 const layout_bubble = {
   title: 'Victims by Region and Cause',
   xaxis: {
-      title: 'Cause Value',
+      title: 'Cause Value (%)',
       range: [0, 85], // Impostare un range specifico per l'asse X
       tickmode: 'array',
       tickvals: [10, 20, 30, 40, 50, 60, 70, 80] // Etichette sull'asse X
   },
   yaxis: {
-      title: 'Victims per 100k inhabitants',
+      title: 'Victims per 100k inhabitants (%)',
       range: [0, 25], // Impostare un range per l'asse Y
       tickmode: 'array',
       tickvals: [0, 5, 10, 15, 20, 25] // Etichette sull'asse Y
