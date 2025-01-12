@@ -35,12 +35,12 @@ a {
 }
 
 a:hover {
-  color: #b5d0c7;
+  color: #d0b5ce;
   text-decoration: none;
 }
 
 body a:hover {
-  color: #23463b;
+  color: #5c2459;
   /* 23463b */
   text-decoration: none;
 }
