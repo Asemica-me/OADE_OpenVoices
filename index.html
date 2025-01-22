@@ -1373,15 +1373,14 @@
             </div>
             <h3 class="analysis-second-title">Source datasets</h3>
             <p class="analysis-text">
-              All source datasets have been assessed following the 
-              <span class="underlined--bg underlined--offset--bg">
+              All <span class="underlined--bg underlined--offset--bg"><b>source datasets</b></span> have been assessed following the 
                 <b><a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html"
-                    target="_blank">metadata model</a> established by AGID, </b></span> , which categorizes metadata quality into four levels. This classification is based on two key factors: the strength of the data-metadata relationship and the level of detail provided.
+                    target="_blank">metadata model</a></b> established by <b>Agenzia per l'Italia Digitale (AGID)</b>, which categorizes metadata quality into four levels. This classification is based on two key factors: <span class="underlined--bg underlined--offset--bg"><b>the strength of the data-metadata relationship</b></span> and <span class="underlined--bg underlined--offset--bg"><b>the level of detail provided</b></span>.
             </p>
             <p class="analysis-text">
               <br>
-              <b>Note:</b>  Further details and reconstructed metadata for the source datasets are available in the <a
-                href="#metadataAnalysisTable">metadata analysis table</a> below.
+              <i><b>Note:</b>  Further details and reconstructed metadata for the source datasets are available in the <a
+                href="#metadataAnalysisTable">metadata analysis table</a> below.</i>
             </p>
             <!-- Tables for source datasets (as in Datasets section)-->
             <div class="table-responsive">
@@ -1459,19 +1458,13 @@
             </h3>
 
             <p class="analysis-text">
-              All generated mashup datasets have been meticulously documented using metadata, adhering to the guidelines outlined in the <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html"
-                target="_blank"><b>DCAT-AP_IT</b></a> standard. This choice aligns with the <span
-                class="underlined--bg underlined--offset--bg"><b>Italian Agency for Digitalization (AGID)</b></span> directives for the valorization of public information heritage.<br><br>
+              All generated <span class="underlined--bg underlined--offset--bg"><b>mashup datasets</b></span> have been documented using metadata, adhering to the latest standard of <a href="https://www.w3.org/TR/vocab-dcat-3/" target="_blank"><b>DCAT Version 3 (August 2024)</b></a>. This choice reflects our commitment to leveraging the most up-to-date standards for metadata representation, ensuring flexibility and compatibility with modern technological frameworks.<br>
 
-              Given that these datasets represent data of significant national interest and are derived from Istat, an Italian public research institution, the adoption of <b>DCAT-AP_IT</b> (2016), was deemed most appropriate. <br>Although this national standard is based on the earlier <b>DCAT v1.0</b> and introduces stricter constraints 
-              compared to the more flexible 
-              <a href="https://www.w3.org/TR/vocab-dcat-3/" target="_blank">DCAT-AP 3.0</a>, 
-              it was chosen because an increasing number of Italian 
-              Public Administrations are aligning with DCAT-AP_IT, ensuring better compatibility within the national ecosystem. 
-              Furthermore, adhering to DCAT-AP_IT allows our datasets to align with detailed national guidelines, thereby facilitating seamless
-              <span class="underlined--bg underlined--offset--bg"><b> interoperability and harmonization</b></span> 
-              with other public data resources in Italy.
-            </p><br>
+              While we referred to <a href="https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/index.html"
+              target="_blank"><b>DCAT-AP_IT</b></a> for alignment with Italian national guidelines, which are based on the earlier <a href="https://www.dati.gov.it/webvowl/index.html"
+              target="_blank"><b>DCAT v1.0 (2016)</b></a> and impose stricter constraints, our implementation adopted DCAT Version 3, as already stated. This approach was chosen to maintain interoperability within the national ecosystem while also benefiting from the advancements and enhanced features of the latest DCAT version of the standard. By doing so, our datasets align with the <span
+              class="underlined--bg underlined--offset--bg"><b>Italian Agency for Digitalization (AGID)</b></span> directives, ensuring their integration with the broader <span class="underlined--bg underlined--offset--bg"><b>public sector information (PSI) heritage</b></span>, while also meeting the evolving needs of metadata management on an international scale.</p><br>
+
 
             <h3 class="analysis-second-title" id="metadataAnalysisTable">
               Semantic Enrichment of Datasets
@@ -1481,7 +1474,7 @@
               The metadata for the source datasets were primarily derived from the original data sources. When metadata was incomplete or unavailable, additional information was inferred and supplemented following the same principles applied to the mashup datasets. For instance, themes were assigned to source datasets based on recognized European Authority standards.
               To enhance the semantic description of datasets, we have utilized several key ontologies, including <b>DCAT, DCTERMS, PROV, FOAF, ADMS, SKOS, CC</b>, and <b>DCAT-AP IT</b>. These ontologies provide a structured framework for describing datasets and their metadata, ensuring interoperability and adherence to <span class="underlined--bg underlined--offset--bg"><b>Linked Open Data (LOD) standards</b></span>. This approach facilitates the discoverability, understandability, and reuse of datasets across diverse contexts.</p><br>
             <p class="analysis-text">
-              The <span class="underlined--bg underlined--offset--bg"><b>DCAT (Data Catalog Vocabulary) ontology</b></span> plays a central role, serving to describe datasets and data catalogs and publish them on the Web. Key properties such as <code>dcat:dataset</code>, associate datasets with a catalog, while <code>dcat:theme</code> categorizes datasets by their topics, and <code>dcat:distribution</code> specifies the available data formats. For example, datasets can be linked to themes like population statistics or societal issues using <code>dcat:theme</code>. Learn more about DCAT Version 3 at <a href="https://www.w3.org/TR/vocab-dcat-3/" target="_blank">W3C DCAT</a>.
+              The <span class="underlined--bg underlined--offset--bg"><b>DCAT (Data Catalog Vocabulary) ontology</b></span> plays a central role, serving to describe datasets and data catalogs and publish them on the Web. Key properties such as <code>dcat3:dataset</code>, associate datasets with a catalog, while <code>dcat3:theme</code> categorizes datasets by their topics, and <code>dcat3:distribution</code> specifies the available data formats. For example, datasets can be linked to themes like population statistics or societal issues using <code>dcat3:theme</code>. Learn more about DCAT Version 3 at <a href="https://www.w3.org/TR/vocab-dcat-3/" target="_blank">W3C DCAT</a>.
             </p>
             <p class="analysis-text">
               <span class="underlined--bg underlined--offset--bg"><b>DCTERMS (Dublin Core Terms)</b></span> is used to describe general metadata, including <code>dcterms:title</code> for dataset titles and descriptions, and <code>dcterms:accessRights</code> to indicate accessibility. This inclusion ensures the use of a widely recognized standard for metadata description. More information about DCTERMS can be found at <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank">Dublin Core Terms</a>.
