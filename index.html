@@ -1377,6 +1377,26 @@
                 <b><a href="https://docs.italia.it/italia/daf/lg-patrimonio-pubblico/it/stabile/modellometadati.html"
                     target="_blank">metadata model</a></b> established by <b>Agenzia per l'Italia Digitale (AGID)</b>, which categorizes metadata quality into four levels. This classification is based on two key factors: <span class="underlined--bg underlined--offset--bg"><b>the strength of the data-metadata relationship</b></span> and <span class="underlined--bg underlined--offset--bg"><b>the level of detail provided</b></span>.
             </p>
+            <p>
+              <ol>
+                <li>
+                  <strong>Syntactic Quality:</strong> 
+                  Ensures correct formatting and structural validity of metadata according to RDF schemas.
+                </li>
+                <li>
+                  <strong>Semantic Quality:</strong> 
+                  Verifies the coherence and meaningfulness of metadata, ensuring alignment with controlled vocabularies or taxonomies.
+                </li>
+                <li>
+                  <strong>Completeness:</strong> 
+                  Assesses whether all mandatory and optional metadata elements are present to avoid missing critical information.
+                </li>
+                <li>
+                  <strong>Consistency:</strong> 
+                  Ensures logical consistency within and across datasets, verifying relationships and adherence to rules.
+                </li>
+              </ol>
+            </p>
             <p class="analysis-text">
               <br>
               <i><b>Note:</b>  Further details and reconstructed metadata for the source datasets are available in the <a
@@ -2346,18 +2366,36 @@
     </div>
 
     <div class="container">
-        <div class="row content" data-aos="fade-up" data-aos-delay="250">
+      <div class="row content" data-aos="fade-up" data-aos-delay="250">
           <div class="section-title justify-content-center">
-          <div class="pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="150" style="padding-bottom: 1em;">
-          <br>
+              <div class="pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="150" style="padding-bottom: 1em;">
+                  <br>
+              </div>
+              <!-- Dropdown to select region -->
+              <select id="region-selector" class="form-control" style="width: 200px; margin: 20px auto;">
+                  <option value="all">All Regions</option>
+                  <option value="Piemonte">Piemonte</option>
+                  <option value="Valle d'Aosta / Vallée d'Aoste">Valle d'Aosta / Vallée d'Aoste</option>
+                  <option value="Liguria">Liguria</option>
+                  <option value="Lombardia">Lombardia</option>
+                  <option value="Trentino Alto Adige / Südtirol">Trentino Alto Adige / Südtirol</option>
+                  <option value="Veneto">Veneto</option>
+                  <option value="Friuli-Venezia Giulia">Friuli-Venezia Giulia</option>
+                  <option value="Emilia-Romagna">Emilia-Romagna</option>
+                  <option value="Toscana">Toscana</option>
+                  <option value="Umbria">Umbria</option>
+                  <option value="Marche">Marche</option>
+                  <option value="Lazio">Lazio</option>
+              </select>
+              <!-- Bubble chart -->
+              <div id="content-bubble-chart" class="chart-wrapper">
+                  <div id="bubble-chart" style="width: 100%; height: 700px;"></div>
+              </div>
           </div>
-          <div id="content-bubble-chart" class="chart-wrapper">
-              <div id="bubble-chart" style="width: 100%; height: 700px;"></div>
-            </div>
-  
-        </div>
-    </div>
-</div>
+      </div>
+  </div>
+
+
   </section>
     <!-- End Visualizations Section -->
 
